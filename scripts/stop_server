@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ifExists=`ps -elf |grep httpd`
+if [[ -n $ifExists ]]; then
+  service httpd stop
+fi
